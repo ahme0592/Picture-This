@@ -38,3 +38,21 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* style.css */
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 960px) {
+  .responsive-image {
+      content: url('images/1.jpg');
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .responsive-image {
+      content: url('images/2.jpg');
+  }
+}
